@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Pesca PRO</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Tienda de Pesca PRO</h1>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </div>
+        <nav id="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#testimonios">Testimonios</a>
+            <a href="#sobre-nosotros">Sobre Nosotros</a>
+            <a href="#contacto">Contacto</a>
+            <input type="text" id="search-bar" placeholder="Buscar productos...">
+        </nav>
+    </header>
+
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="https://source.unsplash.com/1200x500/?fishing" alt="Pesca 1">
+            <img src="https://source.unsplash.com/1200x500/?boat" alt="Barco 1">
+            <img src="https://source.unsplash.com/1200x500/?sea" alt="Mar 1">
+        </div>
+    </div>
+
+    <section class="container" id="inicio">
+        <h2>Bienvenido a nuestra tienda de pesca</h2>
+        <p>Encuentra los mejores artículos para tu próxima aventura de pesca.</p>
+    </section>
+
+    <section class="container" id="productos">
+        <h2>Productos Destacados</h2>
+        <div class="product-list">
+            <div class="product-card">
+                <h3>Caña de pescar profesional</h3>
+                <p>$50.000</p>
+            </div>
+            <div class="product-card">
+                <h3>Anzuelo premium</h3>
+                <p>$5.000</p>
+            </div>
+            <div class="product-card">
+                <h3>Carrete de pesca</h3>
+                <p>$30.000</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="testimonios">
+        <h2>Testimonios</h2>
+        <div class="testimonio-card">
+            <p>"Excelente calidad y atención. Volveré a comprar sin duda."</p>
+            <span>- Juan Pérez</span>
+        </div>
+        <div class="testimonio-card">
+            <p>"Los productos son realmente buenos. Muy recomendado."</p>
+            <span>- María González</span>
+        </div>
+        <div class="testimonio-card">
+            <p>"Una experiencia de compra increíble. Todo perfecto."</p>
+            <span>- Carlos Herrera</span>
+        </div>
+    </section>
+
+    <section class="container" id="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una tienda especializada en artículos de pesca con más de 10 años de experiencia.
+            Nos apasiona ayudar a los pescadores a encontrar el equipo perfecto para sus aventuras.</p>
+    </section>
+
+    <section class="container contact" id="contacto">
+        <h2>Contacto</h2>
+        <form id="contactForm">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo electrónico" required>
+            <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2025 Tienda de Pesca PRO. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
